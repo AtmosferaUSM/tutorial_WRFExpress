@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.5.2">
     
     
       
-        <title>WRF-ARW installation on AWS using SPACK</title>
+        <title>Website - WRF-ARW installation on AWS using SPACK</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.9f9400aa.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f9400aa.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -78,9 +78,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -109,7 +109,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-using-wrfexpress-for-running-wrf-on-aws" class="md-skip">
+        <a href="#user-guide-for-website-environment" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="WRF-ARW installation on AWS using SPACK" class="md-header__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
+    <a href=".." title="WRF-ARW installation on AWS using SPACK" class="md-header__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -144,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Website
             
           </span>
         </div>
@@ -233,7 +233,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WRF-ARW installation on AWS using SPACK" class="md-nav__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
+    <a href=".." title="WRF-ARW installation on AWS using SPACK" class="md-nav__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -243,6 +243,21 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
     
       
       
@@ -262,12 +277,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Overview
+          Website
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Overview
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Website
       </a>
       
         
@@ -286,22 +301,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#website-interface" class="md-nav__link">
-    Website Interface
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-wrf-on-aws-cluster" class="md-nav__link">
-    Running WRF on AWS Cluster
+  <a href="#step-1-setting-up-the-environment" class="md-nav__link">
+    Step 1: Setting Up the Environment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-of-the-python-script" class="md-nav__link">
-    Key Features of the Python Script
+  <a href="#step-2-choosing-the-grid-ratio" class="md-nav__link">
+    Step 2: Choosing the Grid Ratio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-generating-the-namelist" class="md-nav__link">
+    Step 3: Generating the Namelist
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-downloading-gfs-files" class="md-nav__link">
+    Step 4: Downloading GFS Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-confirmation-of-copied-files" class="md-nav__link">
+    Step 5: Confirmation of Copied Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-downloading-data-from-s3" class="md-nav__link">
+    Step 6: Downloading Data from S3
   </a>
   
 </li>
@@ -310,21 +353,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="web/" class="md-nav__link">
-        Website
-      </a>
     </li>
   
 
@@ -356,22 +384,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#website-interface" class="md-nav__link">
-    Website Interface
+  <a href="#overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#running-wrf-on-aws-cluster" class="md-nav__link">
-    Running WRF on AWS Cluster
+  <a href="#step-1-setting-up-the-environment" class="md-nav__link">
+    Step 1: Setting Up the Environment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-features-of-the-python-script" class="md-nav__link">
-    Key Features of the Python Script
+  <a href="#step-2-choosing-the-grid-ratio" class="md-nav__link">
+    Step 2: Choosing the Grid Ratio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-generating-the-namelist" class="md-nav__link">
+    Step 3: Generating the Namelist
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-downloading-gfs-files" class="md-nav__link">
+    Step 4: Downloading GFS Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-confirmation-of-copied-files" class="md-nav__link">
+    Step 5: Confirmation of Copied Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-downloading-data-from-s3" class="md-nav__link">
+    Step 6: Downloading Data from S3
   </a>
   
 </li>
@@ -391,39 +447,52 @@
                   
 
 
-<h1 id="introduction-to-using-wrfexpress-for-running-wrf-on-aws">Introduction to Using WRFExpress for Running WRF on AWS</h1>
-<p><code>WRFExpress</code> is designed to streamline the process of running Weather Research and Forecasting (WRF) models on AWS clusters. This tool simplifies complex configurations and automates various steps, making it accessible even to those without deep technical expertise. Here’s how you can utilize WRFExpress to get started with your WRF simulations.</p>
-<h2 id="website-interface">Website Interface</h2>
-<p>The web interface of WRFExpress allows you to easily define your simulation domain by selecting an area on an interactive map. Here’s a step-by-step guide on how to use it:</p>
-<ol>
-<li><strong>Access the Website</strong>: Navigate to the WRFExpress website and log in with your credentials.</li>
-<li><strong>Select a Domain</strong>: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.</li>
-<li><strong>Configuration Settings</strong>: On the right side of the screen, fill in the necessary configuration details:</li>
-<li><strong>Orcid ID</strong>: Enter your ORCID ID.</li>
-<li><strong>API Token</strong>: Provide your API token.</li>
-<li><strong>Start Date and End Date</strong>: Specify the start and end dates for your simulation period.</li>
-<li><strong>Time Interval</strong>: Set the time interval for data points (e.g., 6 hours).</li>
-<li><strong>Geographical Data Resolution</strong>: Enter the resolution for geographical data.</li>
-<li><strong>DX and DY</strong>: Specify the grid spacing for your simulation.</li>
-<li><strong>Update Configuration</strong>: After filling in the details, click on "Update Configuration" to save your settings.</li>
-<li><strong>Generate Namelist</strong>: Click on "Generate Namelist" to create the <code>namelist.wps</code> file, which is essential for running WRF.</li>
-<li><strong>Generate Download Data Code</strong>: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.</li>
-</ol>
-<h2 id="running-wrf-on-aws-cluster">Running WRF on AWS Cluster</h2>
-<p>After configuring your simulation domain and generating necessary files, follow these steps to run WRF on the AWS cluster:</p>
-<ol>
-<li><strong>Upload Files</strong>: Ensure that the <code>namelist.wps</code> file and any other required scripts are uploaded to the appropriate directories on the AWS cluster.</li>
-<li><strong>Execute Scripts</strong>: Use the provided Python script to run the necessary shell commands on the AWS cluster. This script will automate the execution of WRF-related tasks such as geogrid, ungrib, metgrid, and the WRF model itself.</li>
-<li><strong>Monitor Progress</strong>: The script includes features for monitoring job progress and displaying log files, making it easier to track the simulation’s status.</li>
-</ol>
-<h2 id="key-features-of-the-python-script">Key Features of the Python Script</h2>
-<ul>
-<li><strong>Shell Command Execution</strong>: Automates the execution of multiple WRF-related shell scripts.</li>
-<li><strong>S3 Integration</strong>: Uploads simulation outputs to an S3 bucket and generates a presigned URL for easy download.</li>
-<li><strong>Progress Monitoring</strong>: Uses the <code>rich</code> library to display real-time progress of script execution and job queue status.</li>
-<li><strong>Error Handling</strong>: Provides informative logs for troubleshooting any issues that arise during execution.</li>
-</ul>
-<p>By following these steps, WRFExpress simplifies the setup and execution of WRF simulations on AWS, allowing users to focus more on their research and less on the technical complexities of the modeling process.</p>
+<h1 id="user-guide-for-website-environment">User Guide for Website Environment</h1>
+<h2 id="overview">Overview</h2>
+<p>This guide provides detailed step-by-step instructions on how to use the website for generating namelist files and downloading GFS data. By following these steps, users can efficiently set up their environment, configure their data, and prepare necessary files for their projects.</p>
+<h2 id="step-1-setting-up-the-environment">Step 1: Setting Up the Environment</h2>
+<p><img alt="Website Environment" src="/images/web/1_.png" />
+- Upon accessing the website, users will see an interactive map interface. This map is used to define the area of interest for data configuration.
+- Users need to click on the square icon located at the top of the page. This icon allows you to draw a rectangular selection on the map.
+- To draw a square, click and hold the mouse button on the map, then drag to create the desired area. Release the mouse button to complete the selection.
+- Alternatively, users can use the hand tool to resize the square by clicking on the edges or corners of the drawn area and dragging to adjust the size. The map can also be moved by clicking and dragging the map itself.</p>
+<h2 id="step-2-choosing-the-grid-ratio">Step 2: Choosing the Grid Ratio</h2>
+<p><img alt="Choose Grid Ratio" src="/images/web/2_.png" />
+- After drawing the desired area on the map, a prompt will appear asking for the grid ratio.
+- The grid ratio defines the resolution of the grid for the selected area. For accurate data configuration, the first grid ratio should always be set to 1.
+- Enter the value <code>1</code> in the prompt and click <code>OK</code> to confirm.
+- This step ensures that the base grid is set correctly, which is essential for subsequent configurations.</p>
+<h2 id="step-3-generating-the-namelist">Step 3: Generating the Namelist</h2>
+<p><img alt="Generate Namelist" src="/images/web/4_.png" />
+- Users can generate a namelist file by clicking on the "Generate Namelist" button located in the "Data Download" section.
+- The website will automatically generate the namelist file based on the selected area and grid ratio.
+- Once generated, the namelist file content will be displayed in a popup window.
+- Copy the generated namelist by clicking the "Copy to Clipboard" button.
+- Paste the copied namelist into the appropriate location on your cluster. This file is essential for running WRF models as it contains configuration settings.</p>
+<h2 id="step-4-downloading-gfs-files">Step 4: Downloading GFS Files</h2>
+<p><img alt="Download GFS Files" src="/images/web/5_.png" />
+- Similar to generating the namelist, users can download GFS files by clicking on the relevant button in the "Data Download" section.
+- The website will generate Python code required to download the GFS data files.
+- This code will be displayed in a popup window.
+- Copy the provided Python code by clicking the "Copy to Clipboard" button.
+- Paste the copied code into your Python environment or script to download the necessary GFS data files.
+- Ensure that you have the required permissions and internet access to download the data from the specified URLs.</p>
+<h2 id="step-5-confirmation-of-copied-files">Step 5: Confirmation of Copied Files</h2>
+<p><img alt="Files Copied Confirmation" src="/images/web/6_.png" />
+- After copying the namelist and GFS Python code, a confirmation message will appear.
+- This message indicates that the files have been successfully copied and are ready to use.
+- The confirmation ensures that users can proceed with their workflow, knowing that the necessary files are prepared for the next steps.
+- Users should verify that the copied files are correctly placed in their designated locations on the cluster or local environment.</p>
+<h2 id="step-6-downloading-data-from-s3">Step 6: Downloading Data from S3</h2>
+<p><img alt="Download Data List" src="/images/web/3_.png" />
+- To download the data from S3, users can view the list of available datasets stored on Amazon S3.
+- On the right-hand side of the interface, there is a "Data Download" section that lists available datasets.
+- Scroll through the list and select the required dataset by clicking on it. The selection will highlight the chosen dataset.
+- Once a dataset is selected, the website will generate a temporary access key.
+- This temporary access key can be used to download the data directly from the S3 bucket using a Linux or Mac terminal.
+- Copy the provided access key and use it with commands like <code>aws s3 cp</code> to download the entire folder containing the dataset.
+- This step allows users to easily transfer data from the cloud to their local or cluster environment for further processing.</p>
+<p>By following these detailed steps, users can efficiently navigate the website, configure their data, and prepare the necessary files for their meteorological and environmental projects.</p>
 
 
 
@@ -445,21 +514,21 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
-      
         
-        <a href="web/" class="md-footer__link md-footer__link--next" aria-label="Next: Website" rel="next">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              Website
+              Overview
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
@@ -488,10 +557,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.39f04ddb.min.js"></script>
+      <script src="../assets/javascripts/bundle.39f04ddb.min.js"></script>
       
     
   </body>
