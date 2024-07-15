@@ -84,3 +84,4 @@ plugins:
   - search
 nav:
   - Overview: index.md
+  - Website: web.md
