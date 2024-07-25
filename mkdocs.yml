@@ -1,7 +1,7 @@
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#details
 # mkdocs.yml
-site_name: WRF-ARW installation on AWS using SPACK
+site_name: WRFExpress
 
 # Copyright
 copyright: Copyright &copy; 2022 <a href="http://atmosfera.usm.my/" target="_blank">atmosfera.usm.my</a>
@@ -85,3 +85,4 @@ plugins:
 nav:
   - Overview: index.md
   - Website: web.md
+  - Monitoring and Troubleshooting: troubleshooting.md
