@@ -13,7 +13,7 @@
     
     
       
-        <title>WRF-ARW installation on AWS using SPACK</title>
+        <title>WRFExpress</title>
       
     
     
@@ -125,7 +125,7 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="WRF-ARW installation on AWS using SPACK" class="md-header__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
+    <a href="." title="WRFExpress" class="md-header__button md-logo" aria-label="WRFExpress" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -138,7 +138,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WRF-ARW installation on AWS using SPACK
+            WRFExpress
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -233,13 +233,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WRF-ARW installation on AWS using SPACK" class="md-nav__button md-logo" aria-label="WRF-ARW installation on AWS using SPACK" data-md-component="logo">
+    <a href="." title="WRFExpress" class="md-nav__button md-logo" aria-label="WRFExpress" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    WRF-ARW installation on AWS using SPACK
+    WRFExpress
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -329,6 +329,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="troubleshooting/" class="md-nav__link">
+        Monitoring and Troubleshooting
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -396,7 +411,7 @@
 <h2 id="website-interface">Website Interface</h2>
 <p>The web interface of WRFExpress allows you to easily define your simulation domain by selecting an area on an interactive map. Here’s a step-by-step guide on how to use it:</p>
 <ol>
-<li><strong>Access the Website</strong>: Navigate to the WRFExpress website and log in with your credentials.</li>
+<li><strong>Access the Website</strong>: Navigate to the <a href="https://wrfexpress.com">WRFExpress website</a> and log in with your credentials.</li>
 <li><strong>Select a Domain</strong>: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.</li>
 <li><strong>Configuration Settings</strong>: On the right side of the screen, fill in the necessary configuration details:</li>
 <li><strong>Orcid ID</strong>: Enter your ORCID ID.</li>
@@ -412,9 +427,24 @@
 <h2 id="running-wrf-on-aws-cluster">Running WRF on AWS Cluster</h2>
 <p>After configuring your simulation domain and generating necessary files, follow these steps to run WRF on the AWS cluster:</p>
 <ol>
-<li><strong>Upload Files</strong>: Ensure that the <code>namelist.wps</code> file and any other required scripts are uploaded to the appropriate directories on the AWS cluster.</li>
-<li><strong>Execute Scripts</strong>: Use the provided Python script to run the necessary shell commands on the AWS cluster. This script will automate the execution of WRF-related tasks such as geogrid, ungrib, metgrid, and the WRF model itself.</li>
-<li><strong>Monitor Progress</strong>: The script includes features for monitoring job progress and displaying log files, making it easier to track the simulation’s status.</li>
+<li><strong>Go to <a href="https://wrfexpress.com">WRFExpress.com</a> and log in.</strong></li>
+<li><strong>After entering the necessary info and clicking on the ”Update Configuration” button, copy the namelist text by clicking on the “Generate Namelist” and “Copy to Clipboard” buttons.</strong></li>
+<li><strong>On <a href="https://pcui-auth-3de65d10-76cb-11ee-9cab-02f64d93270f.auth.us-east-2.amazoncognito.com/login?response_type=code&amp;client_id=6hl2fttmbkt04ck3iq353ona9d&amp;scope=openid&amp;redirect_uri=https://x6ekiatuyb.execute-api.us-east-2.amazonaws.com/login&amp;state=563j3c0he2fgb">AWS Parallel Cluster WRF-P2</a>, paste the copied namelist in the terminal and press Enter.</strong></li>
+<li><strong>On WRFExpress, click “Generate Download Data Code” and copy the info by clicking the “Copy to Clipboard” button at the bottom.</strong></li>
+<li><strong>Paste the text in the WRF-P2 terminal and press enter.</strong></li>
+</ol>
+<p><img alt="Website Environment" src="images/index/1_.png" /></p>
+<ol>
+<li><strong>Run the command: <code>python3 main.py</code></strong></li>
+<li><strong>Choose 1 for ”Enter the step number.”</strong></li>
+<li><strong>Choose 1 for the node number.</strong></li>
+<li><strong>Choose 2 for the tasks per node.</strong></li>
+<li><strong>Choose ”Hourly” for the NC file output resolution.</strong></li>
+<li><strong>Wait for the run to complete.</strong></li>
+<li><strong>You can check the progress by opening another shell and typing <code>squeue</code> in the terminal. You can see the progress when the model has started running.</strong></li>
+<li><strong>Note that if you need to rerun the model using the same config, you can call main.py again and choose step 4.</strong></li>
+<li><strong>When the run is complete, you can see the data on the WRFExpress website after refreshing the screen.</strong></li>
+<li><strong>Download the data by selecting the file, files are named with the time (e.g., 2019-07-23 _16-05-18) when the run was complete, clicking the “Copy AWS Commands” and pasting the code in the terminal.</strong></li>
 </ol>
 <h2 id="key-features-of-the-python-script">Key Features of the Python Script</h2>
 <ul>
