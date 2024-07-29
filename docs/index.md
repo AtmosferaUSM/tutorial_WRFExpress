@@ -32,6 +32,19 @@ After configuring your simulation domain and generating necessary files, follow 
 
 ![Website Environment](images/index/1_.png)
 
+/home/ec2-user
+├── geogrid.sh
+├── metgrid.sh
+├── run_ungrib.sh
+├── ungrib.py
+├── main.py # Script to initiate the model run.
+├── transfer.py
+├── wrf.py
+├── v1 # Backup version
+├── wps-install.sbatch
+└── wrf_script.py
+
+
 6. Run the command: `python3 main.py`
 7. Choose 1 for ”Enter the step number.”
 8. Choose 1 for the node number.
