@@ -30,12 +30,9 @@ After configuring your simulation domain and generating necessary files, follow 
 4. On WRFExpress, click “Generate Download Data Code” and copy the info by clicking the “Copy to Clipboard” button at the bottom.
 5. Paste the text in the WRF-P2 terminal and press enter.
 
-![Website Environment](images/index/1_.png)<figcaption>Image caption</figcaption>
+![Website Environment](images/index/1_.png)
+<figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
 
-<figure markdown="span">
-  ![Website Environment](images/index/1_.png){ width="300" }
-  <figcaption>Image caption</figcaption>
-</figure>
 
 6. Run the command: `python3 main.py`
 7. Choose 1 for ”Enter the step number.”
