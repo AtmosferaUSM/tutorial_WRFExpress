@@ -13,7 +13,6 @@ The web interface of WRFExpress allows you to easily define your simulation doma
    - API Token: Provide your API token.
    - Start Date and End Date: Specify the start and end dates for your simulation period.
    - Time Interval: Set the time interval for data points (e.g., 6 hours).
-   - Geographical Data Resolution: Enter the resolution for geographical data.
    - DX and DY: Specify the grid spacing for your simulation.
 4. Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.
 5. Generate Namelist: Click on "Generate Namelist" to create the `namelist.wps` file, which is essential for running WRF.
