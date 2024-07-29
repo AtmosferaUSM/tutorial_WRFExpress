@@ -448,6 +448,32 @@
 <li>When the run is complete, you can see the data on the WRFExpress website after refreshing the screen.</li>
 <li>Download the data by selecting the file, files are named with the time (e.g., 2019-07-23 _16-05-18) when the run was complete, clicking the “Copy AWS Commands” and pasting the code in the terminal.</li>
 </ol>
+<ol>
+        <li>Go to <a href="https://wrfexpress.com" target="_blank">WRFExpress.com</a> and log in.</li>
+        <li>After entering the necessary info and clicking on the "Update Configuration" button, copy the namelist text by clicking on the "Generate Namelist" and "Copy to Clipboard" buttons.</li>
+        <li>On <a href="https://pcui-auth-3de65d10-76cb-11ee-9cab-02f64d93270f.auth.us-east-2.amazoncognito.com/login?response_type=code&client_id=6hl2fttmbkt04ck3iq353ona9d&scope=openid&redirect_uri=https://x6ekiatuyb.execute-api.us-east-2.amazonaws.com/login&state=563j3c0he2fgb" target="_blank">AWS Parallel Cluster WRF-P2</a>, paste the copied namelist in the terminal and press Enter.</li>
+        <li>On WRFExpress, click "Generate Download Data Code" and copy the info by clicking the "Copy to Clipboard" button at the bottom.</li>
+        <li>Paste the text in the WRF-P2 terminal and press enter.</li>
+    </ol>
+
+<div class="highlight"><pre><span></span><code>&lt;p align=&quot;center&quot;&gt;
+    &lt;img src=&quot;images/index/1_.png&quot; alt=&quot;Website Environment&quot;&gt;
+    &lt;figcaption&gt;Directory structure of the WRF model setup on AWS.&lt;/figcaption&gt;
+&lt;/p&gt;
+
+&lt;ol start=&quot;6&quot;&gt;
+    &lt;li&gt;Run the command: &lt;code&gt;python3 main.py&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;Choose 1 for ”Enter the step number.”&lt;/li&gt;
+    &lt;li&gt;Choose 1 for the node number.&lt;/li&gt;
+    &lt;li&gt;Choose 2 for the tasks per node.&lt;/li&gt;
+    &lt;li&gt;Choose ”Hourly” for the NC file output resolution.&lt;/li&gt;
+    &lt;li&gt;Wait for the run to complete.&lt;/li&gt;
+    &lt;li&gt;You can check the progress by opening another shell and typing &lt;code&gt;squeue&lt;/code&gt; in the terminal. You can see the progress when the model has started running.&lt;/li&gt;
+    &lt;li&gt;Note that if you need to rerun the model using the same config, you can call &lt;code&gt;main.py&lt;/code&gt; again and choose step 4.&lt;/li&gt;
+    &lt;li&gt;When the run is complete, you can see the data on the WRFExpress website after refreshing the screen.&lt;/li&gt;
+    &lt;li&gt;Download the data by selecting the file, files are named with the time (e.g., 2019-07-23 _16-05-18) when the run was complete, clicking the &quot;Copy AWS Commands&quot; and pasting the code in the terminal.&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></div>
 <h2 id="key-features-of-the-python-script">Key Features of the Python Script</h2>
 <ul>
 <li>Shell Command Execution: Automates the execution of multiple WRF-related shell scripts.</li>
