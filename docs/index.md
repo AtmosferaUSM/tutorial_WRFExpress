@@ -10,15 +10,13 @@ The web interface of WRFExpress allows you to easily define your simulation doma
 2. Select a Domain: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.
 3. Configuration Settings: On the right side of the screen, fill in the necessary configuration details:
 
->  - **Orcid ID**: Enter your ORCID ID.
-   - **API Token**: Provide your API token.
-   - **Start Date and End Date**: Specify the start and end dates for your simulation period.
-   - **Time Interval**: Set the time interval for data points (e.g., 6 hours).
-   - **DX and DY**: Specify the grid spacing for your simulation.
-
 <ul>
    <li>
-      **DX and DY**: Specify the grid spacing for your simulation.
+      <b>Orcid ID</b>: Enter your ORCID ID.
+      <b>API Token</b> Provide your API token.
+      <b>Start Date and End Date</b> Specify the start and end dates for your simulation period.
+      <b>Time Interval</b> Set the time interval for data points (e.g., 6 hours).
+      <b>DX and DY</b> Specify the grid spacing for your simulation.
    </li>
 </ul>
 
