@@ -33,6 +33,11 @@ After configuring your simulation domain and generating necessary files, follow 
 ![Website Environment](images/index/1_.png)
 <figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
 
+<p align="center">
+  <img src="images/index/1_.png" alt="Website Environment">
+  <figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
+</p>
+
 
 6. Run the command: `python3 main.py`
 7. Choose 1 for ”Enter the step number.”
