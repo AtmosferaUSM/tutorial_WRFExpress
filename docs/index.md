@@ -24,6 +24,24 @@ The web interface of WRFExpress allows you to easily define your simulation doma
 5. Generate Namelist: Click on "Generate Namelist" to create the `namelist.wps` file, which is essential for running WRF.
 6. Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.
 
+
+<ol>
+        <li>Access the Website: Navigate to the <a href="https://wrfexpress.com" target="_blank">WRFExpress website</a> and log in with your credentials.</li>
+        <li>Select a Domain: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.</li>
+        <li>Configuration Settings: On the right side of the screen, fill in the necessary configuration details:</li>
+        <ul>
+            <li><b>Orcid ID</b>: Enter your ORCID ID.</li>
+            <li><b>API Token</b>: Provide your API token.</li>
+            <li><b>Start Date and End Date</b>: Specify the start and end dates for your simulation period.</li>
+            <li><b>Time Interval</b>: Set the time interval for data points (e.g., 6 hours).</li>
+            <li><b>DX and DY</b>: Specify the grid spacing for your simulation.</li>
+        </ul>
+        <li>Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.</li>
+        <li>Generate Namelist: Click on "Generate Namelist" to create the <code>namelist.wps</code> file, which is essential for running WRF.</li>
+        <li>Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.</li>
+</ol>
+
+
 ## Running WRF on AWS Cluster
 
 After configuring your simulation domain and generating necessary files, follow these steps to run WRF on the AWS cluster:
