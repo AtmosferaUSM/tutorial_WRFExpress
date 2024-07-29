@@ -35,11 +35,9 @@ After configuring your simulation domain and generating necessary files, follow 
   <li>Paste the text in the WRF-P2 terminal and press enter.</li>
 </ol>
 
-<img src="images/index/1_.png" alt="Website Environment">
-
 <figure markdown="span">
-  ![Image title](images/index/1_.png){ width="300" }
-  <figcaption>Image caption</figcaption>
+  ![Image title](images/index/1_.png)
+  <figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
 </figure>
 
 <ol start="6">
