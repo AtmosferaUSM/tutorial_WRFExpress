@@ -16,6 +16,12 @@ The web interface of WRFExpress allows you to easily define your simulation doma
    - **Time Interval**: Set the time interval for data points (e.g., 6 hours).
    - **DX and DY**: Specify the grid spacing for your simulation.
 
+<ul>
+   <li>
+      **DX and DY**: Specify the grid spacing for your simulation.
+   </li>
+</ul>
+
 4. Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.
 5. Generate Namelist: Click on "Generate Namelist" to create the `namelist.wps` file, which is essential for running WRF.
 6. Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.
@@ -31,13 +37,6 @@ After configuring your simulation domain and generating necessary files, follow 
 5. Paste the text in the WRF-P2 terminal and press enter.
 
 ![Website Environment](images/index/1_.png)
-<figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
-
-<p align="center">
-  <img src="images/index/1_.png" alt="Website Environment">
-  <figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
-</p>
-
 
 6. Run the command: `python3 main.py`
 7. Choose 1 for ”Enter the step number.”
