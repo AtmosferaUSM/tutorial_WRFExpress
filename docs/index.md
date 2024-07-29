@@ -37,6 +37,11 @@ After configuring your simulation domain and generating necessary files, follow 
 
 <img src="images/index/1_.png" alt="Website Environment">
 
+<figure markdown="span">
+  ![Image title](images/index/1_.png){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
+
 <ol start="6">
    <li>Run the command: <code>python3 main.py</code></li>
    <li>Choose 1 for ”Enter the step number.”</li>
@@ -49,6 +54,8 @@ After configuring your simulation domain and generating necessary files, follow 
    <li>When the run is complete, you can see the data on the WRFExpress website after refreshing the screen.</li>
    <li>Download the data by selecting the file, files are named with the time (e.g., 2019-07-23 _16-05-18) when the run was complete, clicking the "Copy AWS Commands" and pasting the code in the terminal.</li>
 </ol>
+
+
 
 
 ## Key Features of the Python Script
