@@ -6,39 +6,20 @@
 
 The web interface of WRFExpress allows you to easily define your simulation domain by selecting an area on an interactive map. Here’s a step-by-step guide on how to use it:
 
-1. Access the Website: Navigate to the [WRFExpress website](https://wrfexpress.com) and log in with your credentials.
-2. Select a Domain: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.
-3. Configuration Settings: On the right side of the screen, fill in the necessary configuration details:
-
-<ul>
-   <li>
-      <b>Orcid ID</b>: Enter your ORCID ID.
-      <b>API Token</b> Provide your API token.
-      <b>Start Date and End Date</b> Specify the start and end dates for your simulation period.
-      <b>Time Interval</b> Set the time interval for data points (e.g., 6 hours).
-      <b>DX and DY</b> Specify the grid spacing for your simulation.
-   </li>
-</ul>
-
-4. Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.
-5. Generate Namelist: Click on "Generate Namelist" to create the `namelist.wps` file, which is essential for running WRF.
-6. Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.
-
-
 <ol>
-        <li>Access the Website: Navigate to the <a href="https://wrfexpress.com" target="_blank">WRFExpress website</a> and log in with your credentials.</li>
-        <li>Select a Domain: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.</li>
-        <li>Configuration Settings: On the right side of the screen, fill in the necessary configuration details:</li>
-        <ul>
-            <li><b>Orcid ID</b>: Enter your ORCID ID.</li>
-            <li><b>API Token</b>: Provide your API token.</li>
-            <li><b>Start Date and End Date</b>: Specify the start and end dates for your simulation period.</li>
-            <li><b>Time Interval</b>: Set the time interval for data points (e.g., 6 hours).</li>
-            <li><b>DX and DY</b>: Specify the grid spacing for your simulation.</li>
-        </ul>
-        <li>Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.</li>
-        <li>Generate Namelist: Click on "Generate Namelist" to create the <code>namelist.wps</code> file, which is essential for running WRF.</li>
-        <li>Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.</li>
+   <li>Access the Website: Navigate to the <a href="https://wrfexpress.com" target="_blank">WRFExpress website</a> and log in with your credentials.</li>
+   <li>Select a Domain: Use the interactive map to draw rectangles defining your simulation domains. You can create multiple nested domains by drawing new rectangles within existing ones.</li>
+   <li>Configuration Settings: On the right side of the screen, fill in the necessary configuration details:</li>
+   <ul>
+      <li><b>Orcid ID</b>: Enter your ORCID ID.</li>
+      <li><b>API Token</b>: Provide your API token.</li>
+      <li><b>Start Date and End Date</b>: Specify the start and end dates for your simulation period.</li>
+      <li><b>Time Interval</b>: Set the time interval for data points (e.g., 6 hours).</li>
+      <li><b>DX and DY</b>: Specify the grid spacing for your simulation.</li>
+   </ul>
+  <li>Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.</li>
+  <li>Generate Namelist: Click on "Generate Namelist" to create the <code>namelist.wps</code> file, which is essential for running WRF.</li>
+  <li>Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.</li>
 </ol>
 
 
