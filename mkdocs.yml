@@ -1,5 +1,6 @@
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#details
+# https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
 # mkdocs.yml
 site_name: WRFExpress
 
