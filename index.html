@@ -407,7 +407,7 @@
 
 
 <h1 id="introduction-to-using-wrfexpress-for-running-wrf-on-aws">Introduction to Using WRFExpress for Running WRF on AWS</h1>
-<p><code>WRFExpress</code> is designed to streamline the process of running Weather Research and Forecasting (WRF) models on AWS clusters. This tool simplifies complex configurations and automates various steps, making it accessible even to those without deep technical expertise. Here’s how you can utilize WRFExpress to get started with your WRF simulations.</p>
+<p>WRFExpress is designed to streamline the process of running Weather Research and Forecasting (WRF) models on AWS clusters. This tool simplifies complex configurations and automates various steps, making it accessible even to those without deep technical expertise. Here’s how you can utilize WRFExpress to get started with your WRF simulations.</p>
 <h2 id="website-interface">Website Interface</h2>
 <p>The web interface of WRFExpress allows you to easily define your simulation domain by selecting an area on an interactive map. Here’s a step-by-step guide on how to use it:</p>
 <ol>
@@ -422,30 +422,38 @@
       <li><b>DX and DY</b>: Specify the grid spacing for your simulation.</li>
    </ul>
   <li>Update Configuration: After filling in the details, click on "Update Configuration" to save your settings.</li>
-  <li>Generate Namelist: Click on "Generate Namelist" to create the <code>namelist.wps</code> file, which is essential for running WRF.</li>
-  <li>Generate Download Data Code: Click on "Generate Download Data Code" to get the Python script for downloading necessary data files.</li>
+  <li>Generate Namelist and Download Data Code: Click on "Generate Namelist" to create the <code>namelist.wps</code> file and get the Python script for downloading necessary data files. Use the "Copy to Clipboard" button to copy the generated code and namelist.</li>
 </ol>
 
 <h2 id="running-wrf-on-aws-cluster">Running WRF on AWS Cluster</h2>
 <p>After configuring your simulation domain and generating necessary files, follow these steps to run WRF on the AWS cluster:</p>
 <ol>
    <li>Go to <a href="https://wrfexpress.com" target="_blank">WRFExpress.com</a> and log in.</li>
+   <li>Select your desired simulation area using the interactive map drawing tool.</li>
    <li>After entering the necessary info and clicking on the "Update Configuration" button, copy the namelist text by clicking on the "Generate Namelist" and "Copy to Clipboard" buttons.</li>
    <li>On <a href="https://x6ekiatuyb.execute-api.us-east-2.amazonaws.com/" target="_blank">AWS Parallel Cluster WRF-P2</a>, paste the copied namelist in the terminal and press Enter.</li>
-  <li>On WRFExpress, click "Generate Download Data Code" and copy the info by clicking the "Copy to Clipboard" button at the bottom.</li>
-  <li>Paste the text in the WRF-P2 terminal and press enter.</li>
+   <li>After pressing Enter, the <code>python3 main.py</code> command will execute automatically.</li>
 </ol>
 
 <figure>
   <img alt="Image title" src="images/index/1_.png" />
-  <figcaption>Directory structure of the WRF model setup on AWS.</figcaption>
+  <figcaption>Directory structure of the automation files utilized in the project.</figcaption>
 </figure>
 <ol start="6">
-   <li>Run the command: <code>python3 main.py</code></li>
-   <li>Choose 1 for ”Enter the step number.”</li>
+   <li>Select the step to start from (1-5):
+      <ul>
+         <li>1. Geogrid: Prepares the geographical data for the simulation. If selected, the process will continue through steps 2-4.</li>
+         <li>2. UNGRIB: Processes the meteorological data for the model. If selected, the process will continue through steps 3-4.</li>
+         <li>3. METGRID: Interpolates the meteorological data onto the model grid. If selected, the process will continue through step 4.</li>
+         <li>4. WRF: Runs the Weather Research and Forecasting model.</li>
+         <li>5. Delete: Cleans up temporary and intermediate files from the WRF run directory. This step is optional and can be selected independently.</li>
+      </ul>
+   </li>
+   <li>To initiate the process, you can start by pressing 5 to perform a cleanup operation. After the cleanup, select 1 to begin with the Geogrid step, which will continue automatically through steps 2 (UNGRIB), 3 (METGRID), and 4 (WRF).</li>
    <li>Choose 1 for the node number.</li>
    <li>Choose 2 for the tasks per node.</li>
    <li>Choose ”Hourly” for the NC file output resolution.</li>
+   <li>Select the parameterization scheme. You will be prompted to choose from available options (1) and type "yes" to confirm your selection.
    <li>Wait for the run to complete.</li>
    <li>You can check the progress by opening another shell and typing <code>squeue</code> in the terminal. You can see the progress when the model has started running.</li>
    <li>Note that if you need to rerun the model using the same config, you can call <code>main.py</code> again and choose step 4.</li>
